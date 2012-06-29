@@ -1,0 +1,15 @@
+.account_block {
+	padding: 10px 10px 15px 10px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.acct_link {
+	text-decoration: underline;
+	color:#5A5951;
+	font-size: 10px;
+	text-transform: none;
+}
+.acct_link:hover {
+	text-decoration: none;
+}

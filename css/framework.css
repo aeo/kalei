@@ -1,0 +1,96 @@
+/************* COMMON ***/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: content-box;
+}
+
+body {
+	font: normal 11px/1.2 Arial, Helvetica, sans-serif;
+	color: #5a5951;
+}
+
+a img {
+	border: none;
+}
+
+.plain_table {
+	/*border-collapse: collapse;*/
+	border-spacing: 0;
+}
+
+/* This removes the inner spacing on input elements in Firefox */
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.clearer {
+	display: block;
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.emptyClear {
+	display: block !important;
+	clear: both !important;
+	height: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+}
+
+.disable_select {
+-webkit-user-select: none;
+ -khtml-user-select: none;
+   -moz-user-select: none;
+	 -o-user-select: none;
+		user-select: none;
+}
+
+/* Gradients throughout the site */
+.fieldset_bg {
+	background: #d5d4c6;
+	background: -moz-linear-gradient(top, #d5d4c6 0%, #cdccbc 42%, #bab9a9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d5d4c6), color-stop(42%,#cdccbc), color-stop(100%,#bab9a9));
+	background: -webkit-linear-gradient(top, #d5d4c6 0%,#cdccbc 42%,#bab9a9 100%);
+	background: -o-linear-gradient(top, #d5d4c6 0%,#cdccbc 42%,#bab9a9 100%);
+	background: -ms-linear-gradient(top, #d5d4c6 0%,#cdccbc 42%,#bab9a9 100%);
+	background: linear-gradient(top, #d5d4c6 0%,#cdccbc 42%,#bab9a9 100%);
+}
+
+.ae_branded_block_header {
+	color: white;
+	background-color: #0A1720;
+}
+
+.branded_block_header {
+	padding: 4px 8px;
+	margin-bottom: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;
+}
+
+.branded_block_header span {
+	font-weight: normal;
+	text-transform: none;
+}
+
+.standoffish {
+	margin-bottom: 12px;
+}
+
+/* Account Home Overrides */
+.account_home .branded_block_header {
+	margin-bottom: 0;
+}
+
+.account_home .account_block {
+	padding-top: 16px;
+}

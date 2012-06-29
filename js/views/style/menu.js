@@ -9,13 +9,13 @@ define([
 ], function($, _, Backbone, dashboardPageTemplate, jscssp, config){
   var DashboardPage = Backbone.View.extend({
     el: '.kalei-style-menu',
-    render: function () {   
+    render: function () {
       var that = this;
       that.$el.html('Loading styles');
       require(['text!' + config.css_path + '/styles.css'], function (styles) {
 
-        
-     
+
+
       var parser = new jscssp();
         marked.setOptions({ sanitize: false, gfm: true });
         var stylesheet = parser.parse(styles, false, true);
@@ -35,7 +35,7 @@ define([
 
             var comments = marked.lexer(comment);
             _.each(comments, function (comment) {
-              
+
               if(comment.type === 'heading' && comment.depth === 1) {
                 menuTitle = marked.parser([comment]);
               }
@@ -55,6 +55,7 @@ define([
           }
 
         });
+        console.log(currentMenu);
         menus.push(currentMenu);
 
 
@@ -63,7 +64,7 @@ define([
         $(that.el).html(_.template(dashboardPageTemplate, {_:_, menuTitle: menuTitle, menus: menus}));
         $('[href="' + window.location.hash + '"]').addClass('active');
       });
-      
+
     },
     events: {
       'click a': function (ev) {

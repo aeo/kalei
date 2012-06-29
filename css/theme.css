@@ -93,7 +93,7 @@ body {
 }
 
 /*
-## CSS and Comments Layout 
+## CSS and Comments Layout
 
 These styles make sure the css code block is floated to the right correctly and the comments on the left
 
@@ -137,10 +137,10 @@ These styles make sure the css code block is floated to the right correctly and 
 
 	border-radius: 6px;
 	border: 1px solid #ebebeb;
-	
+
 	font-size: 11px;
 
-	white-space: pre-wrap; 
+	white-space: pre-wrap;
 }
 
 /*
@@ -150,22 +150,22 @@ When you use Markdown code blocks ```, Kalei automatically renders the code as H
 ```
 <pre>
 	<code>
-		.kalei-comments > pre > code, 
+		.kalei-comments > pre > code,
 		.kalei-css-container > pre > code {
 			font-size: 11px;
 			opacity: 0.7;
-			white-space: pre-wrap; 
+			white-space: pre-wrap;
 			padding: 10px;
 		}
 	</code>
 </pre>
 ```
 */
-.kalei-comments > pre > code, 
+.kalei-comments > pre > code,
 .kalei-css-container > pre > code {
 	font-size: 11px;
 
-	white-space: pre-wrap; 
+	white-space: pre-wrap;
 	padding: 10px;
 }
 .kalei-css-container,
@@ -173,7 +173,7 @@ When you use Markdown code blocks ```, Kalei automatically renders the code as H
 
 		opacity: 0.5;
 }
-.kalei-comments > pre > code:hover, 
+.kalei-comments > pre > code:hover,
 .kalei-css-container:hover  {
 	opacity: 1;
 }
@@ -181,7 +181,7 @@ When you use Markdown code blocks ```, Kalei automatically renders the code as H
 	display: none;
 }
 .kalei-comments >  pre {
-	margin: 0;	
+	margin: 0;
 	border-bottom: 1px solid #ebebeb;
 	border-left: 1px solid #ebebeb;
 	border-right: 1px solid #ebebeb;
@@ -190,7 +190,7 @@ When you use Markdown code blocks ```, Kalei automatically renders the code as H
 
 padding: 20px;
 margin: 0 0 20px 0;
-background: 
+background:
 white;
 -webkit-border-radius: 6px;
 -moz-border-radius: 6px;
@@ -199,10 +199,10 @@ border-radius: 6px;
 -moz-box-sizing: border-box;
 -o-box-sizing: border-box;
 box-sizing: border-box;
--webkit-box-shadow: 1px 1px 2px 
+-webkit-box-shadow: 1px 1px 2px
 rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-box-shadow: 1px 1px 2px 
+box-shadow: 1px 1px 2px
 rgba(0, 0, 0, 0.1);
 }
 body .codedemo {
@@ -257,3 +257,7 @@ body .codedemo {
 	color: #517c1a;
 }
 
+/* Un-override our reset styles */
+h2 {
+	margin: 1.1em 0;
+}

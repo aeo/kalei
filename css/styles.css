@@ -25,7 +25,7 @@ This project aims at making sure your style sheets are fully documented whilst b
 
 1. Download the repository (`git clone git://github.com/thomasdavis/kalei.git`)
 2. Serve it on a HTTP server and it should work!
-3. Edit `js/config.js` to point at your own `styles.css` 
+3. Edit `js/config.js` to point at your own `styles.css`
 
 
 ## Author
@@ -39,26 +39,20 @@ Richard Barret
 
 Need more contributors to give it a nicer style and more functionality
 
-
-
-
 */
 
 @import url("theme.css");
+@import url("framework.css");
 
-
-
-
-/* ### Example Buttons ### */
-
+/* ### Buttons ### */
 @import url("buttons.css");
-@import url("fixie-demo.css");
 
-/* ### Third Party ### */
+/* ### Social Media ### */
+@import url("facebook.css");
+@import url("share.css");
 
-@import url("highlight/styles/github.css");
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
+/* ### Site Sections ### */
+@import url("account.css");
 /*
 ## Inspiration
 
@@ -75,7 +69,7 @@ Kalei is heavily influenced by the following projects and blog posts.
 [Anchoring Your Design Language in a Live Style Guide](http://uxmag.com/articles/anchoring-your-design-language-in-a-live-style-guide)
 
 
-## Technologies 
+## Technologies
 
 * [marked](https://github.com/chjj/marked)
 * [jscssp](http://www.glazman.org/JSCSSP/)
@@ -86,7 +80,7 @@ Kalei is heavily influenced by the following projects and blog posts.
 * [underscore](http://underscorejs.org/)
 * [jquery](http://jquery.com)
 
-## License 
+## License
 
 Public domain: http://unlicense.org/
 

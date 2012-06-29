@@ -1,0 +1,132 @@
+/*
+# Example Facebook Stylesheet
+
+```
+<h2>Facebook buttons</h2>
+
+<div class="fb_login_bttn"><span class="fb_small_logo">Facebook</span><span class="fb_login_action_text">Login with Facebook</span></div>
+
+<br><br>
+<h2>Account Home - Sign up with Facebook</h2>
+<div class="account_home_block account_home">
+	<h3 class="branded_block_header ae_branded_block_header">Connect with Facebook</h3>
+	<div class="fieldset_bg account_block">
+		<div class="socialConnections fb_profile_info">
+			<div class="fb_large_logo">Facebook</div>
+			<div class="fb_perks">
+				<p class="infoHeader standoffish">The perks of connecting your Facebook account:</p>
+				<ul class="perkList">
+					<li>Easy and secure account access</li>
+					<li>Remember one less password</li>
+					<li>Share reviews, wishlists &amp; more with your friends</li>
+					<li>Sync your shopping bag and preferences between the web and our our mobile app</li>
+				</ul>
+				<div class="fb_login_bttn"><span class="fb_small_logo">Facebook</span><span class="fb_login_action_text">Login with Facebook</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h2>Account Home - Facebook Profile</h2>
+<div class="account_home_block account_home">
+	<h3 class="branded_block_header ae_branded_block_header">Connect with Facebook</h3>
+	<div class="fieldset_bg account_block">
+		<div class="socialConnections fb_profile_info"><div class="fb_profile_pic_clip"><img src="//graph.facebook.com/4802034/picture?type=large&amp;return_ssl_resources=1" alt="Facebook Photo" height="78" class="profile_img fb_profile_img"></div><h3 class="congrats_title">You have connected your Facebook account!</h3><h3 class="fb_full_name">Sam Tsai <a href="/web/myaccount/account_setting.jsp" class="acct_link">Edit</a></h3><span class="fb_smallest_logo">Facebook Logo</span> Facebook Connected
+		</div>
+	</div>
+</div>
+```
+*/
+body {
+	font: normal 11px/1.2 Arial, Helvetica, sans-serif;
+	color: #5a5951;
+}
+.fb_login_bttn {
+	width: 245px;
+	height: 23px;
+	padding-bottom: 10px;
+	background-color: #5872a7;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	-moz-border-radius:3px 3px 3px 3px;
+	-webkit-border-radius:3px 3px 3px 3px;
+	border-radius:3px 3px 3px 3px;
+	-moz-box-shadow: inset 0 0 2px rgba(70, 70, 70, .5), 1px 1px 2px rgba(70, 70, 70, .8);
+	-webkit-box-shadow: inset 0 0 2px rgba(70, 70, 70, .5), 1px 1px 2px rgba(70, 70, 70, .8);
+	box-shadow: inset 0 0 2px rgba(70, 70, 70, .5), 1px 1px 2px rgba(70, 70, 70, .8);
+	cursor: pointer;
+}
+.fb_small_logo {
+	display: inline-block;
+	padding-top: 28px;
+	height: 0;
+	width: 28px;
+	overflow: hidden;
+	background-image: url("http://www.ae.com/Images/facebook/facebook-logos.png");
+	background-repeat: no-repeat;
+	background-position: 0 -78px;
+	margin: 2px 0 2px -10px;
+}
+.fb_smallest_logo {
+	display: inline-block;
+	padding-top: 15px;
+	height: 0;
+	width: 15px;
+	overflow: hidden;
+	background-image: url("http://www.ae.com/Images/facebook/facebook-logos.png");
+	background-repeat: no-repeat;
+	background-position: 0 -106px;
+	margin-bottom: -1px;
+}
+.fb_large_logo {
+	background-image: url("http://www.ae.com/Images/facebook/facebook-logos.png");
+	background-repeat: no-repeat;
+	padding-top: 78px;
+	height: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 78px;
+}
+.fb_login_action_text {
+	position: relative;
+	top: -11px;
+	left: 10px;
+}
+
+/* Profile */
+.fb_profile_info {
+	position: relative;
+}
+.fb_profile_img {
+	height: 78px;
+	float: left;
+	margin-right: 15px;
+}
+.congrats_title {
+	font-weight: bold;
+	font-size: 10px;
+	color: #5a5951;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+.fb_full_name {
+	font-size: 17px;
+	margin: 9px 9px 9px 0;
+}
+.fb_profile_info .acct_link {
+	text-transform: uppercase;
+}
+.fb_perks {
+	padding-left: 94px;
+	font-size: 10px;
+}
+
+.perkList {
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
