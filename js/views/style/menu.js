@@ -12,7 +12,8 @@ define([
     render: function () {
       var that = this;
       that.$el.html('Loading styles');
-      require(['text!' + config.css_path + '/styles.css'], function (styles) {
+      console.log(config.css_path);
+      require(['text!' + config.css_path], function (styles) {
 
 
 
